@@ -1,0 +1,22 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.title-wrapper {
+  text-align: center;
+}
+.title {
+  color: rgb(117, 108, 108);
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
