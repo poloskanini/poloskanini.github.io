@@ -37,14 +37,16 @@ img {
 }
 
 .project-link{
+  margin: 4rem;
+  padding: 10px;
   list-style-type: none;
-  padding: 30px;
   display: flex;
   flex-direction: column;
   filter: grayscale(0);
   transition: all ease-in-out .5s;
-  background-color: rgb(255, 255, 255, .5);
-  color: #000;
+  background-color: rgba(8, 6, 6, 0.8);
+  color: rgb(240, 240, 245);
+  font-size: 18px;
 }
 
 .project-link:hover {
