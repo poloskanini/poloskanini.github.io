@@ -43,6 +43,8 @@ img {
   flex-direction: column;
   filter: grayscale(0);
   transition: all ease-in-out .5s;
+  background-color: rgb(255, 255, 255, .5);
+  color: #000;
 }
 
 .project-link:hover {
