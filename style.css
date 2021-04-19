@@ -1,5 +1,5 @@
 /* BASIC RESET */
-*, ::before, ::after {
+* {
   margin: 0;
   padding: 0
 }
@@ -10,24 +10,25 @@ body {
   background-color: #010C20;
 }
 
-.hero {
-  height: 200vh;
+.main-content {
   z-index: 10;
+}
+
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  flex-direction: column;
+  background-color: #000;
 }
 
 .hero video {
   width: 100%;
-  height: 200vh;
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  z-index: 5;
+  height: 100vh;
   object-fit: cover;
-  z-index: -1;
-}
-
-img {
-  height: 75px;
+  position: absolute;
+  z-index: 0;
 }
 
 /* HEADINGS */
@@ -40,13 +41,6 @@ img {
   font-weight: 100;
 }
 
-/* MAIN / PROJECTS */
-
-.project-title {
-  font-weight: 600;
-  padding-bottom: 1rem;
-}
-
 /* HEADER */
 header {
   margin: 3rem;
@@ -55,36 +49,31 @@ header {
   top: 0;
 }
 
-/* PROJECTS */
-
-main {
-  display: flex;
-  justify-content: center;
-}
-.projects {
-  top: 0;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin-top: 15rem;
-  text-align: center;
-}
-
+/* MAIN / PROJECTS */
 .projects-list {
-  width: 60%;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  /* max-width: 1300px; */
+  /* width: 80%; */
+  /* margin: 70px auto 0; */
+  position: relative;
+  padding-top: 10rem;
 }
 
 .project-link{
-  margin: 2rem 0;
+  width: 600px;
+  margin: 5rem;
   padding: 20px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  transition: all ease-in-out .5s;
-  background-color: rgba(255,255,255, 0.1);
+  transition: all ease-in-out .3s;
   cursor: pointer;
   text-decoration: none;
+  text-align: center;
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 20px;
   border-radius: 2%;
@@ -92,8 +81,10 @@ main {
   box-shadow: 6px 0 20px -6px rgba(255,255,255,0.6);
 }
 
-.project-link img {
+.project-img {
   margin: 10px 0;
+  width: 100%;
+  height: auto;
 }
 
 .project-link:hover {
@@ -101,14 +92,28 @@ main {
   background-color: rgb(56, 42, 134);
 }
 
+.project-title {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+/*
+
 /* SKILLS */
+
+/* 
 .skills {
   height: 100vh;
-}
+} */
+
+/* FOOTER */
+footer {
+  background-color: yellow;
+  z-index: 10000;
 
 
 /* DESKTOP VERSION */
-@media screen and (min-width: 700px) {
+/* @media screen and (min-width: 700px) {
 
   img {
     height: 250px;
@@ -116,13 +121,12 @@ main {
 
   header {
     margin: 4rem 0 0 5rem;
-  }
+  } */
 
-  .projects-list {
+  /* .projects-list {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
   }
 
   .main-title {
@@ -144,5 +148,5 @@ main {
 
   .project-link{
     margin: 4rem;
-  }
-}
+  /* }
+} */
