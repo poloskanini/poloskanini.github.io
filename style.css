@@ -105,8 +105,7 @@ header {
 
 .project-img {
   margin: 10px 0;
-  width: 100%;
-  height: auto;
+  max-height: 200px;
 }
 
 .project-link:hover {
